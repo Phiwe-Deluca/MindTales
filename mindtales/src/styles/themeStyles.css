@@ -1,0 +1,87 @@
+/* === Global Styles: Retro-Futuristic Meets Soulful === */
+body {
+    background: linear-gradient(135deg, #2E1A47, #FC466B); /* Deep purple with warm pink hues */
+    color: #FFD700; /* Bold gold, reminiscent of vintage glam */
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+/* === Leopard Print Overlay (Soft Vintage Texture) === */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('C:/Users/tshep/Downloads/glamour.jpeg'); /* Add your leopard texture */
+    opacity: 0.2; /* Just enough to feel luxe */
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* === Typography: Soulful & Funky === */
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive; /* Handwritten, vibey */
+    color: #F4A261; /* Warm orange like vintage vinyl covers */
+    text-shadow: 3px 3px 12px rgba(244, 162, 97, 0.8);
+}
+
+/* === Buttons: Bold & Smooth === */
+button {
+    background: linear-gradient(45deg, #FF4500, #3F5EFB); /* Electric gradient */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 22px;
+    border-radius: 50px;
+    border: 2px solid #FFD700;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #3F5EFB, #FF4500);
+    transform: scale(1.08);
+}
+
+/* === Cards & Content Blocks === */
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* === Text Inputs: Retro Glow === */
+input, textarea {
+    background: transparent;
+    border: 2px solid #FFD700;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0px 0px 15px #FFD700;
+}
+
+/* === Mood-Based Theme Colors === */
+.mood-happy { background: #FFD700; color: #222; }
+.mood-reflective { background: #2E1A47; color: #E0C3FC; }
+.mood-energetic { background: #FF4500; color: #FFF; }
+.mood-calm { background: #A0E7E5; color: #222; }
+
+/* === Funky Animations === */
+@keyframes glow {
+    0% { text-shadow: 0px 0px 8px #FFD700; }
+    50% { text-shadow: 0px 0px 20px #FFD700; }
+    100% { text-shadow: 0px 0px 8px #FFD700; }
+}
+
+h1 {
+    animation: glow 4s infinite alternate;
+}

@@ -1,0 +1,88 @@
+/* === Reset Default Browser Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* === Global Styling === */
+body {
+    background: linear-gradient(135deg, #2E1A47, #FC466B);
+    color: #FFD700; /* Gold - a nod to retro luxury */
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* === Layout Fixes === */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* === Navbar Styling === */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* === Sidebar Styling === */
+aside {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+}
+
+/* === Footer Styling === */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* === Buttons === */
+button {
+    background: linear-gradient(45deg, #FF4500, #3F5EFB);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #3F5EFB, #FF4500);
+    transform: scale(1.05);
+}
+
+/* === Funky Animations === */
+@keyframes glow {
+    0% { text-shadow: 0px 0px 5px #FFD700; }
+    50% { text-shadow: 0px 0px 15px #FFD700; }
+    100% { text-shadow: 0px 0px 5px #FFD700; }
+}
+
+h1 {
+    animation: glow 4s infinite alternate;
+}
+
+/* === Responsive Design Fixes === */
+@media screen and (max-width: 768px) {
+    aside {
+        display: none; /* Hide sidebar on smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
