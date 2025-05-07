@@ -11,6 +11,8 @@ import DiaryProvider from './context/DiaryContext';
 // Import global styles (optional)
 import './styles/index.css';
 
+//commit 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
